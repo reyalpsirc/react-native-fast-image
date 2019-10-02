@@ -28,6 +28,10 @@ Performant React Native image component.
   <em>FastImage example app.</em>
 </p>
 
+# THIS IS A TEMPORARY VERSION WITH CLEAN CACHE METHODS
+
+### [Click here](https://github.com/DylanVann/react-native-fast-image) to go to the original source
+
 React Native's `Image` component handles image caching like browsers
 for the most part.
 If the server is returning proper cache control
