@@ -11,6 +11,11 @@
 		FCFB25401EA5562700F59778 /* FFFastImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFB253A1EA5562700F59778 /* FFFastImageView.m */; };
 		FCFB25411EA5562700F59778 /* FFFastImageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFB253C1EA5562700F59778 /* FFFastImageViewManager.m */; };
 		FCFB25421EA5562700F59778 /* RCTConvert+FFFastImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFB253E1EA5562700F59778 /* RCTConvert+FFFastImage.m */; };
+		FD751C43229EB44C002BE1F4 /* FFFastImageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFB253C1EA5562700F59778 /* FFFastImageViewManager.m */; };
+		FD751C44229EB44C002BE1F4 /* RCTConvert+FFFastImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFB253E1EA5562700F59778 /* RCTConvert+FFFastImage.m */; };
+		FD751C45229EB44C002BE1F4 /* FFFastImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFB253A1EA5562700F59778 /* FFFastImageView.m */; };
+		FD751C46229EB44C002BE1F4 /* FFFastImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFB25381EA5562700F59778 /* FFFastImageSource.m */; };
+		FD751C48229EB44C002BE1F4 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC6D0D01EB38D2F0065F944 /* libSDWebImage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,13 @@
 			remoteGlobalIDString = 53761307155AD0D5005750A4;
 			remoteInfo = "SDWebImage iOS static";
 		};
+		FD751C41229EB44C002BE1F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC6D0C61EB38D2F0065F944 /* SDWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53761307155AD0D5005750A4;
+			remoteInfo = "SDWebImage iOS static";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,11 +66,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD751C49229EB44C002BE1F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A287971D1DE0C0A60081BDFA /* libFastImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFastImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCC6D0C61EB38D2F0065F944 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = Vendor/SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 		FCFB25371EA5562700F59778 /* FFFastImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFastImageSource.h; sourceTree = "<group>"; };
 		FCFB25381EA5562700F59778 /* FFFastImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFastImageSource.m; sourceTree = "<group>"; };
 		FCFB25391EA5562700F59778 /* FFFastImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFastImageView.h; sourceTree = "<group>"; };
@@ -67,6 +87,7 @@
 		FCFB253C1EA5562700F59778 /* FFFastImageViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFastImageViewManager.m; sourceTree = "<group>"; };
 		FCFB253D1EA5562700F59778 /* RCTConvert+FFFastImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+FFFastImage.h"; sourceTree = "<group>"; };
 		FCFB253E1EA5562700F59778 /* RCTConvert+FFFastImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+FFFastImage.m"; sourceTree = "<group>"; };
+		FD751C4D229EB44C002BE1F4 /* libFastImage-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFastImage-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +99,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD751C47229EB44C002BE1F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD751C48229EB44C002BE1F4 /* libSDWebImage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				FCFB25361EA5562700F59778 /* FastImage */,
-				A28797331DE0CA420081BDFA /* Vendor */,
 				A287971E1DE0C0A60081BDFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,16 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				A287971D1DE0C0A60081BDFA /* libFastImage.a */,
+				FD751C4D229EB44C002BE1F4 /* libFastImage-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A28797331DE0CA420081BDFA /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				FCC6D0C61EB38D2F0065F944 /* SDWebImage.xcodeproj */,
-			);
-			name = Vendor;
 			sourceTree = "<group>";
 		};
 		FCC6D0C71EB38D2F0065F944 /* Products */ = {
@@ -152,6 +173,24 @@
 			productReference = A287971D1DE0C0A60081BDFA /* libFastImage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		FD751C3F229EB44C002BE1F4 /* FastImage-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD751C4A229EB44C002BE1F4 /* Build configuration list for PBXNativeTarget "FastImage-tvOS" */;
+			buildPhases = (
+				FD751C42229EB44C002BE1F4 /* Sources */,
+				FD751C47229EB44C002BE1F4 /* Frameworks */,
+				FD751C49229EB44C002BE1F4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD751C40229EB44C002BE1F4 /* PBXTargetDependency */,
+			);
+			name = "FastImage-tvOS";
+			productName = FastImage;
+			productReference = FD751C4D229EB44C002BE1F4 /* libFastImage-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				A287971C1DE0C0A60081BDFA /* FastImage */,
+				FD751C3F229EB44C002BE1F4 /* FastImage-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +267,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD751C42229EB44C002BE1F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD751C43229EB44C002BE1F4 /* FFFastImageViewManager.m in Sources */,
+				FD751C44229EB44C002BE1F4 /* RCTConvert+FFFastImage.m in Sources */,
+				FD751C45229EB44C002BE1F4 /* FFFastImageView.m in Sources */,
+				FD751C46229EB44C002BE1F4 /* FFFastImageSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -234,6 +285,11 @@
 			isa = PBXTargetDependency;
 			name = "SDWebImage iOS static";
 			targetProxy = FCC6D1281EB3908E0065F944 /* PBXContainerItemProxy */;
+		};
+		FD751C40229EB44C002BE1F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SDWebImage iOS static";
+			targetProxy = FD751C41229EB44C002BE1F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -330,7 +386,6 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
-					"$(SRCROOT)/Vendor/SDWebImage",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,7 +401,6 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
-					"$(SRCROOT)/Vendor/SDWebImage",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,7 +408,41 @@
 			};
 			name = Release;
 		};
-		3FF0385BAFA2433596B0AF10 /* ReleaseProd */ = {
+		FD751C4B229EB44C002BE1F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/Libraries/Image",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+			};
+			name = Debug;
+		};
+		FD751C4C229EB44C002BE1F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/Libraries/Image",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+			};
+			name = Release;
+		};
+		48496AED073E4F12B3DBB2BA /* ReleaseProd */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -393,7 +481,7 @@
 			};
 			name = "ReleaseProd";
 		};
-		3B6037B81DBE4A229FA6608F /* ReleaseProd */ = {
+		F52DE1D27FAF4EE19950D1CA /* ReleaseProd */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -401,7 +489,6 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
-					"$(SRCROOT)/Vendor/SDWebImage",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,7 +496,24 @@
 			};
 			name = "ReleaseProd";
 		};
-		B8EBCFF21A524A9DA21F0A71 /* ReleaseTest */ = {
+		DE19B670814D45EE88DC71DA /* ReleaseProd */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/Libraries/Image",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+			};
+			name = "ReleaseProd";
+		};
+		AC8964F943234108A4D5A08B /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -448,7 +552,7 @@
 			};
 			name = "ReleaseTest";
 		};
-		ECEA9E16D335401C97D3B7CC /* ReleaseTest */ = {
+		C733DF7F8A6E404AA4BBEE26 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -456,7 +560,6 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
-					"$(SRCROOT)/Vendor/SDWebImage",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -464,7 +567,24 @@
 			};
 			name = "ReleaseTest";
 		};
-		30363B11AC614AF09B042479 /* ReleaseAcc */ = {
+		1BA0BFC85D9F48698D2E2AD2 /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/Libraries/Image",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+			};
+			name = "ReleaseTest";
+		};
+		5FFE6143299145F887CBBD4A /* ReleaseAcc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -503,7 +623,7 @@
 			};
 			name = "ReleaseAcc";
 		};
-		2859DF9F513E4369BD2C9633 /* ReleaseAcc */ = {
+		5D5EE4967CB3499EBC2B1935 /* ReleaseAcc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -511,11 +631,27 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
-					"$(SRCROOT)/Vendor/SDWebImage",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = "ReleaseAcc";
+		};
+		D40E8DF7317E4C799EEB0BD7 /* ReleaseAcc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/Libraries/Image",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 			};
 			name = "ReleaseAcc";
 		};
@@ -527,9 +663,9 @@
 			buildConfigurations = (
 				A28797241DE0C0A60081BDFA /* Debug */,
 				A28797251DE0C0A60081BDFA /* Release */,
-				3FF0385BAFA2433596B0AF10 /* ReleaseProd */,
-				B8EBCFF21A524A9DA21F0A71 /* ReleaseTest */,
-				30363B11AC614AF09B042479 /* ReleaseAcc */,
+				48496AED073E4F12B3DBB2BA /* ReleaseProd */,
+				AC8964F943234108A4D5A08B /* ReleaseTest */,
+				5FFE6143299145F887CBBD4A /* ReleaseAcc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -539,9 +675,21 @@
 			buildConfigurations = (
 				A28797271DE0C0A60081BDFA /* Debug */,
 				A28797281DE0C0A60081BDFA /* Release */,
-				3B6037B81DBE4A229FA6608F /* ReleaseProd */,
-				ECEA9E16D335401C97D3B7CC /* ReleaseTest */,
-				2859DF9F513E4369BD2C9633 /* ReleaseAcc */,
+				F52DE1D27FAF4EE19950D1CA /* ReleaseProd */,
+				C733DF7F8A6E404AA4BBEE26 /* ReleaseTest */,
+				5D5EE4967CB3499EBC2B1935 /* ReleaseAcc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD751C4A229EB44C002BE1F4 /* Build configuration list for PBXNativeTarget "FastImage-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD751C4B229EB44C002BE1F4 /* Debug */,
+				FD751C4C229EB44C002BE1F4 /* Release */,
+				DE19B670814D45EE88DC71DA /* ReleaseProd */,
+				1BA0BFC85D9F48698D2E2AD2 /* ReleaseTest */,
+				D40E8DF7317E4C799EEB0BD7 /* ReleaseAcc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
